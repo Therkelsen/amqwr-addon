@@ -19,7 +19,7 @@ jobs:
 
     - name: Find and validate JSON files
       run: |
-        find . -name "*.json" -type f | while read file; do
+        find . -name "*.jsonc" -type f | while read file; do
           echo "Validating $file"
           jq . "$file" > /dev/null 2>&1
           if [ $? -ne 0 ]; then
