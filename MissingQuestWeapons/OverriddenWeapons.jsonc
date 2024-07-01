@@ -84,7 +84,8 @@
         "weapon_M1911CE_1143x23_MASSIVESOFT": "Pistol",
         "weapon_M14_762x51_MASSIVESOFT": "AssaultRifle,MarksmanRifle",
         "weapon_TYPE64_762x25_MASSIVESOFT": "Smg",
-        "weapon_AA12_12ga_MASSIVESOFT": "Shotgun",
+        "weapon_JAK12_12ga_MASSIVESOFT": "Shotgun",
+        "weapon_AA12_12ga_MASSIVESOFT": "Shotgun", // JAK12 alternative, for those who renamed it.
         "weapon_QBZ03_std_MASSIVESOFT": "AssaultRifle",
         "66015072e9f84d5680039678": "Pistol", // Plastic toy gun, good luck with that
         "MIRA_weapon_colt_m16a4_556x45": "AssaultRifle",
@@ -139,7 +140,7 @@
             "name": "AKM", // Identifier
             "ids": [], // if a weapon is in this list, it will be considered as this category no matter what
             "whiteListedKeywords": [
-                "\\b(AKM|AK-1|VPO)\\w*"
+                "\\b(AKM|AK-1|VPO|Draco)\\w*"
             ], //  these will be searched in the weapon name and description
             "blackListedKeywords": [], //  weapons with name/description containing these will be removed
             "allowedCalibres": [
@@ -162,7 +163,8 @@
             "ids": [
                 "61f7c9e189e6fb1a5e3ea78d", // MP-18 7.62x54R single-shot rifle
                 "weapon_striker_12",
-                "weapon_AA12_12ga_MASSIVESOFT"
+                "weapon_JAK12_12ga_MASSIVESOFT",
+                "weapon_AA12_12ga_MASSIVESOFT" // JAK12 alternative, for those who renamed it.
             ], // if a weapon is in this list, it will be considered as this category no matter what
             "whiteListedKeywords": [], //  these will be searched in the weapon name and description
             "blackListedKeywords": [], //  weapons with name/description containing these will be removed
@@ -175,7 +177,7 @@
             "name": "AK",
             "ids": [],
             "whiteListedKeywords": [
-                "\\b(AK)\\w*"
+                "\\b(AK|Draco)\\w*"
             ],
             "blackListedKeywords": [],
             "allowedCalibres": [],
@@ -185,7 +187,7 @@
             "name": "AK-74",
             "ids": [],
             "whiteListedKeywords": [
-                "\\b(AK-74|AKS-74|SAG AK-545)\\w*"
+                "\\b(AK-74|AKS-74|SAG AK-545|Saiga SGL31|Saiga MK Ver. 030)\\w*"
             ],
             "blackListedKeywords": [
                 "\\b(AKS-74U)\\w*"
@@ -197,7 +199,7 @@
             "name": "AR-15",
             "ids": [],
             "whiteListedKeywords": [
-                "\\b(AR-15|M4A1)\\w*"
+                "\\b(AR-15|M4A1|ATL-15)\\w*"
             ],
             "blackListedKeywords": [],
             "allowedCalibres": [],
@@ -207,7 +209,7 @@
             "name": "M4A1",
             "ids": [],
             "whiteListedKeywords": [
-                "\\b(M4A1)\\w*"
+                "\\b(M4A1|M416|MCX)\\w*"
             ],
             "blackListedKeywords": [],
             "allowedCalibres": [],
